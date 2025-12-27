@@ -19,7 +19,7 @@ Proyek ini dikembangkan sebagai bagian dari tugas **Praktikum Pemrograman Web 2*
 | **NIM** | 312410500 |
 | **Kelas** | TI.24.A.5 |
 | **Universitas** | Universitas Pelita Bangsa |
-| **Mata Kuliah** | Pemrograman Web 2 |
+| **Mata Kuliah** | Pemrograman Web 1 |
 
 ---
 
@@ -44,6 +44,10 @@ Aplikasi tidak diakses secara langsung per file, melainkan melalui satu pintu ge
 ### 4. Manajemen Akun (User Profile)
 * **Profil Admin:** Menampilkan informasi pengguna yang sedang login.
 * **Ubah Password:** Fitur mengubah kata sandi dengan validasi keamanan enkripsi baru.
+
+### 5. Pencarian & Navigasi Data (Search & Pagination)
+* **Live Search:** Fitur pencarian data barang menggunakan query `LIKE` SQL.
+* **Pagination:** Memecah tampilan data menjadi beberapa halaman (paging) menggunakan `LIMIT` dan `OFFSET` agar website tetap ringan meski data berjumlah banyak.
 
 ---
 
@@ -104,6 +108,12 @@ Halaman untuk melihat info akun dan mengubah password admin.
 ## 6. halaman ubah barang/data
 <img src="lab11_php_oop/img/ubah.png" width="700">
 
+## 7. Fitur Pencarian
+<img src="lab11_php_oop/img/pencarian.png" width="700">
+
+## 8. Fitur Pagination
+<img src="lab11_php_oop/img/pagination.png" width="700">
+
 ⚙️ Instalasi & Penggunaan
 Ikuti langkah ini untuk menjalankan proyek di komputer lokal (Localhost):
 
@@ -120,12 +130,13 @@ Import file SQL atau buat tabel users dan data_barang.
 
 Sesuaikan file config.php dengan user/password MySQL kamu.
 
+```
 Akun Demo (Admin) Gunakan akun berikut untuk masuk:
 
 Username: admin
 
 Password: admin123
-
+```
 Jalankan Aplikasi Buka browser dan akses: http://localhost/Lab11Web/
 
 🧠 Penjelasan Teknis (Code Snippet)
